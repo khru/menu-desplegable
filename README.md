@@ -1,2 +1,0 @@
-# my-pets
-Simple website
