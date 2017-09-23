@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <!--
         Esta etiqueta se utiliza para que cuando estes viendo la web desde un móvil
-        no se pueda ampliar el contenido más info
-        https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag
+        no se pueda alejar el contenido.
+        más info: https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--
@@ -13,9 +13,35 @@
         http://librosweb.es/tutorial/las-novedades-de-internet-explorer-11-para-disenadores-y-programadores-web/
     -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Pets</title>
+    <script src="./js/_build/bundle.js"></script>
+    <title>Menu desplegable</title>
 </head>
 <body>
     
+    <!-- Section header -->
+    <section class="header">
+        <!-- Cabecera -->
+        <header>
+            <h1 class="title">Menu desplegable</h1>
+            <section class="menu-state">
+                <input type="checkbox" name="menu-bar" value="menu-bar" id="menu-bar">
+                <label for="menu-bar"><i class="fa fa-bars fa-checked-hidden fa-fw" aria-hidden="true"></i><i class="fa fa-times fa-checked-show fa-fw" aria-hidden="true"></i></label>
+                <nav class="menu">
+                    <a href="">Sobre mi</a>
+                    <a href="">Estudios</a>
+                    <a href="">Experiencia</a>
+                    <a href="">Contacto</a>
+                </nav>
+            </section>
+            
+        </header>
+        <!-- FIN Cabecera -->
+            <!-- contenido principal --> 
+            <main>
+                
+            </main>
+            <!-- FIN contenido principal -->      
+    </section>
+        
 </body>
 </html>

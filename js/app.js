@@ -1,1 +1,1 @@
-console.log("saasd")
+require("../css/style.css");

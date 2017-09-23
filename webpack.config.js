@@ -5,6 +5,7 @@ const webpack = require('webpack');
 // variabloe de la configuración del entorno
 const nodeEnv = process.env.NODE_ENV || 'production';
 
+
 module.exports = {
     devtool: 'source-map',
     entry : {
@@ -22,7 +23,15 @@ module.exports = {
                 query : {
                     presets : ['es2015-native-modules'] 
                 }
-            }
+            },
+            {
+                test : /\.css$/,
+                use : [
+                    { loader: "style-loader" },
+                    { loader: 'css-loader', options: { minimize: true } }
+                ]
+            },
+            { test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
         ]
     },
     plugins : [
@@ -37,4 +46,4 @@ module.exports = {
             'process.env': { NODE_ENV : JSON.stringify(nodeEnv) }
         })
     ]
-}
+};
